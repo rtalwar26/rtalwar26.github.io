@@ -1,6 +1,6 @@
 const gulp = require('gulp')
 const zipdir = require('zip-dir');
-const directoryName = 'docs';
+const directoryName = '.';
 var outputDirectory = `./${directoryName}`
 var replace = require('gulp-replace');
 var rename = require("gulp-rename");
@@ -53,7 +53,7 @@ function cleanDist() {
 
 function cleanDocs() {
   return del([
-    './docs/**/*',
+    './static/**/*',
 
   ]);
 }

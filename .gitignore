@@ -10,4 +10,4 @@ dump.rdb
 .marko-devtools/
 package-lock.json
 src/**/*.marko.js
-!/docs
+/docs
