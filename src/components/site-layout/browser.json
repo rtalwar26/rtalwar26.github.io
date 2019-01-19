@@ -1,6 +1,7 @@
 {
   "dependencies": [
-    "../../assets/css/main.css",
+    "../../assets/sass/main.scss",
+    "../../assets/css/font-awesome.min.css",
     "../../assets/js/jquery.min.js",
     "../../assets/js/jquery.poptrox.min.js",
     "../../assets/js/browser.min.js",

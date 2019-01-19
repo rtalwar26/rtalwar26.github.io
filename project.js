@@ -28,7 +28,8 @@ module.exports = require("marko-starter").projectConfig({
     urlPrefix: isGithubPublish ? `${packageConfig.baseurl || ""}/static` : (isAndroidPublish ? 'static' : '/static'),
     minifyJS: false,
     plugins: [
-      'lasso-marko'
+      'lasso-marko',
+      'lasso-sass'
     ]
   }
 });
