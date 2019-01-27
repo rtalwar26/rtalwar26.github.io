@@ -1,0 +1,9 @@
+<div class="chat-window">
+  <if(state.show_spinner)>
+    <spinner />
+
+    </if>
+    <iframe on-load('iframe_loaded') scrolling="on" src="${input.url}" width="${state.width}" height="${state.height}"
+      frameborder="0"></iframe>
+
+</div>

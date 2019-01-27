@@ -1,0 +1,16 @@
+.chat-window {
+  background-color: #eee;
+  border: 5px solid darkgrey;
+  min-height: 400px;
+  min-width: 320px;
+  width: 320px;
+  height: 400px;
+  display: block;
+  bottom: 10px;
+  right: 10px;
+  float: right;
+  position: -webkit-sticky;
+  /* Safari */
+  position: sticky;
+
+}
