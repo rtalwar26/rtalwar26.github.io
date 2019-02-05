@@ -73,3 +73,7 @@
   margin: 0 0 1em 0;
   width: 6.25em;
 }
+
+.margin-left {
+  margin-left: 1em;
+}

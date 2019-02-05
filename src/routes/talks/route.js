@@ -13,11 +13,11 @@ for (let venue of venuePaths) {
         talk.endsWith('.marko') && paramsFromDirectory.push({ venue: venue, title: talk.replace(".marko", "") });
     }
 }
-console.log(paramsFromDirectory);
 exports.path = '/talks/:venue/:title';
 exports.params = paramsFromDirectory;
 exports.handler = (input, out) => {
     let { venue, title } = input.params;
-    const template = require(`./${dirPath}/${input.params.venue}/${input.params.title.toLowerCase()}.marko`);
-    template.render({ venue, title }, out);
+    let tags = require('../tags');
+    const template = require(path.resolve(__dirname, dirPath, input.params.venue, input.params.title.toLowerCase() + '.marko'));
+    template.render({ venue, title, tags }, out);
 };
