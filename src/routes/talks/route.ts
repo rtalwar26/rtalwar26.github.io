@@ -19,7 +19,7 @@ exports.params = paramsFromDirectory;
 
 exports.handler = (input, out) => {
     let { venue, title } = input.params;
-    let tags = require('../tags');
+
     const template = require(path.resolve(__dirname, dirPath, input.params.venue, input.params.title.toLowerCase() + '.marko'));
-    template.render({ venue, title, tags }, out);
+    template.render({ venue, title }, out);
 };
