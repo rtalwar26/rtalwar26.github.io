@@ -591,13 +591,13 @@ https://github.com/joyent/node/blob/master/lib/module.js
     }
 })();
 
-$_mod.installed("app$1.0.0", "marko", "4.14.21");
-$_mod.remap("/marko$4.14.21/components", "/marko$4.14.21/components-browser.marko");
-$_mod.main("/marko$4.14.21/dist/components", "");
-$_mod.remap("/marko$4.14.21/dist/components/index", "/marko$4.14.21/dist/components/index-browser");
-$_mod.remap("/marko$4.14.21/dist/components/util", "/marko$4.14.21/dist/components/util-browser");
-$_mod.def("/marko$4.14.21/dist/components/dom-data", function(require, exports, module, __filename, __dirname) { var counter = 0;
-var seed = require.resolve('/marko$4.14.21/dist/components/dom-data'/*"./dom-data"*/);
+$_mod.installed("app$1.0.0", "marko", "4.14.25");
+$_mod.remap("/marko$4.14.25/components", "/marko$4.14.25/components-browser.marko");
+$_mod.main("/marko$4.14.25/dist/components", "");
+$_mod.remap("/marko$4.14.25/dist/components/index", "/marko$4.14.25/dist/components/index-browser");
+$_mod.remap("/marko$4.14.25/dist/components/util", "/marko$4.14.25/dist/components/util-browser");
+$_mod.def("/marko$4.14.25/dist/components/dom-data", function(require, exports, module, __filename, __dirname) { var counter = 0;
+var seed = require.resolve('/marko$4.14.25/dist/components/dom-data'/*"./dom-data"*/);
 var WeakMap = global.WeakMap || function WeakMap() {
     var id = seed + counter++;
     return {
@@ -618,7 +618,7 @@ module.exports = {
     _M_: new WeakMap()
 };
 });
-$_mod.def("/marko$4.14.21/dist/components/util-browser", function(require, exports, module, __filename, __dirname) { var domData = require('/marko$4.14.21/dist/components/dom-data'/*"./dom-data"*/);
+$_mod.def("/marko$4.14.25/dist/components/util-browser", function(require, exports, module, __filename, __dirname) { var domData = require('/marko$4.14.25/dist/components/dom-data'/*"./dom-data"*/);
 var componentsByDOMNode = domData.d_;
 var keysByDOMNode = domData._M_;
 var vElementsByDOMNode = domData._K_;
@@ -776,8 +776,8 @@ exports._O_ = getMarkoPropsFromEl;
 exports._V_ = addComponentRootToKeyedElements;
 exports.ar_ = normalizeComponentKey;
 });
-$_mod.remap("/marko$4.14.21/dist/components/init-components", "/marko$4.14.21/dist/components/init-components-browser");
-$_mod.installed("marko$4.14.21", "warp10", "2.0.1");
+$_mod.remap("/marko$4.14.25/dist/components/init-components", "/marko$4.14.25/dist/components/init-components-browser");
+$_mod.installed("marko$4.14.25", "warp10", "2.0.1");
 $_mod.def("/warp10$2.0.1/src/constants", function(require, exports, module, __filename, __dirname) { var win = typeof window !== "undefined" ? window : global;
 exports.NOOP = win.$W10NOOP = win.$W10NOOP || function () {};
 });
@@ -850,7 +850,7 @@ module.exports = function finalize(outer) {
 });
 $_mod.def("/warp10$2.0.1/finalize", function(require, exports, module, __filename, __dirname) { module.exports = require('/warp10$2.0.1/src/finalize'/*'./src/finalize'*/);
 });
-$_mod.def("/marko$4.14.21/dist/components/event-delegation", function(require, exports, module, __filename, __dirname) { var componentsUtil = require('/marko$4.14.21/dist/components/util-browser'/*"./util"*/);
+$_mod.def("/marko$4.14.25/dist/components/event-delegation", function(require, exports, module, __filename, __dirname) { var componentsUtil = require('/marko$4.14.25/dist/components/util-browser'/*"./util"*/);
 var runtimeId = componentsUtil._N_;
 var componentLookup = componentsUtil.a_;
 var getMarkoPropsFromEl = componentsUtil._O_;
@@ -978,7 +978,7 @@ exports._P_ = function (doc) {
     });
 };
 });
-$_mod.def("/marko$4.14.21/dist/morphdom/helpers", function(require, exports, module, __filename, __dirname) { function insertBefore(node, referenceNode, parentNode) {
+$_mod.def("/marko$4.14.25/dist/morphdom/helpers", function(require, exports, module, __filename, __dirname) { function insertBefore(node, referenceNode, parentNode) {
     if (node.insertInto) {
         return node.insertInto(parentNode, referenceNode);
     }
@@ -1013,7 +1013,7 @@ exports.aw_ = nextSibling;
 exports.S_ = firstChild;
 exports.ax_ = removeChild;
 });
-$_mod.def("/marko$4.14.21/dist/morphdom/fragment", function(require, exports, module, __filename, __dirname) { var helpers = require('/marko$4.14.21/dist/morphdom/helpers'/*"./helpers"*/);
+$_mod.def("/marko$4.14.25/dist/morphdom/fragment", function(require, exports, module, __filename, __dirname) { var helpers = require('/marko$4.14.25/dist/morphdom/helpers'/*"./helpers"*/);
 var insertBefore = helpers.as_;
 
 var fragmentPrototype = {
@@ -1085,7 +1085,7 @@ function beginFragmentNode(startNode, parentNode) {
 exports._U_ = createFragmentNode;
 exports.au_ = beginFragmentNode;
 });
-$_mod.installed("marko$4.14.21", "raptor-util", "3.2.0");
+$_mod.installed("marko$4.14.25", "raptor-util", "3.2.0");
 $_mod.def("/raptor-util$3.2.0/extend", function(require, exports, module, __filename, __dirname) { module.exports = function extend(target, source) { //A simple function to copy properties from one object to another
     if (!target) { //Check if a target was provided, otherwise create a new empty object to return
         target = {};
@@ -1102,7 +1102,7 @@ $_mod.def("/raptor-util$3.2.0/extend", function(require, exports, module, __file
     return target;
 };
 });
-$_mod.def("/marko$4.14.21/dist/components/KeySequence", function(require, exports, module, __filename, __dirname) { function KeySequence() {
+$_mod.def("/marko$4.14.25/dist/components/KeySequence", function(require, exports, module, __filename, __dirname) { function KeySequence() {
     this._B_ = {};
 }
 
@@ -1128,13 +1128,13 @@ KeySequence.prototype = {
 
 module.exports = KeySequence;
 });
-$_mod.def("/marko$4.14.21/dist/components/ComponentDef", function(require, exports, module, __filename, __dirname) { "use strict";
+$_mod.def("/marko$4.14.25/dist/components/ComponentDef", function(require, exports, module, __filename, __dirname) { "use strict";
 
-var componentUtil = require('/marko$4.14.21/dist/components/util-browser'/*"./util"*/);
+var componentUtil = require('/marko$4.14.25/dist/components/util-browser'/*"./util"*/);
 var attachBubblingEvent = componentUtil.Z_;
-var addDelegatedEventHandler = require('/marko$4.14.21/dist/components/event-delegation'/*"./event-delegation"*/).___;
+var addDelegatedEventHandler = require('/marko$4.14.25/dist/components/event-delegation'/*"./event-delegation"*/).___;
 var extend = require('/raptor-util$3.2.0/extend'/*"raptor-util/extend"*/);
-var KeySequence = require('/marko$4.14.21/dist/components/KeySequence'/*"./KeySequence"*/);
+var KeySequence = require('/marko$4.14.25/dist/components/KeySequence'/*"./KeySequence"*/);
 
 var FLAG_WILL_RERENDER_IN_BROWSER = 1;
 /*
@@ -1282,8 +1282,8 @@ ComponentDef._m_ = function (o, types, global, registry) {
 
 module.exports = ComponentDef;
 });
-$_mod.remap("/marko$4.14.21/dist/components/registry", "/marko$4.14.21/dist/components/registry-browser");
-$_mod.def("/marko$4.14.21/dist/components/State", function(require, exports, module, __filename, __dirname) { var extend = require('/raptor-util$3.2.0/extend'/*"raptor-util/extend"*/);
+$_mod.remap("/marko$4.14.25/dist/components/registry", "/marko$4.14.25/dist/components/registry-browser");
+$_mod.def("/marko$4.14.25/dist/components/State", function(require, exports, module, __filename, __dirname) { var extend = require('/raptor-util$3.2.0/extend'/*"raptor-util/extend"*/);
 
 function ensure(state, propertyName) {
     var proto = state.constructor.prototype;
@@ -1383,11 +1383,11 @@ State.prototype = {
 
 module.exports = State;
 });
-$_mod.def("/marko$4.14.21/dist/runtime/dom-insert", function(require, exports, module, __filename, __dirname) { var extend = require('/raptor-util$3.2.0/extend'/*"raptor-util/extend"*/);
-var componentsUtil = require('/marko$4.14.21/dist/components/util-browser'/*"../components/util"*/);
+$_mod.def("/marko$4.14.25/dist/runtime/dom-insert", function(require, exports, module, __filename, __dirname) { var extend = require('/raptor-util$3.2.0/extend'/*"raptor-util/extend"*/);
+var componentsUtil = require('/marko$4.14.25/dist/components/util-browser'/*"../components/util"*/);
 var destroyComponentForNode = componentsUtil.aq_;
 var destroyNodeRecursive = componentsUtil.c_;
-var helpers = require('/marko$4.14.21/dist/morphdom/helpers'/*"../morphdom/helpers"*/);
+var helpers = require('/marko$4.14.25/dist/morphdom/helpers'/*"../morphdom/helpers"*/);
 
 var insertBefore = helpers.as_;
 var insertAfter = helpers.av_;
@@ -1461,7 +1461,7 @@ module.exports = function (target, getEl, afterInsert) {
     });
 };
 });
-$_mod.def("/marko$4.14.21/dist/runtime/createOut", function(require, exports, module, __filename, __dirname) { var actualCreateOut;
+$_mod.def("/marko$4.14.25/dist/runtime/createOut", function(require, exports, module, __filename, __dirname) { var actualCreateOut;
 
 function setCreateOut(createOutFunc) {
     actualCreateOut = createOutFunc;
@@ -1475,8 +1475,8 @@ createOut.aM_ = setCreateOut;
 
 module.exports = createOut;
 });
-$_mod.def("/marko$4.14.21/dist/components/GlobalComponentsContext", function(require, exports, module, __filename, __dirname) { var nextComponentIdProvider = require('/marko$4.14.21/dist/components/util-browser'/*"./util"*/)._w_;
-var KeySequence = require('/marko$4.14.21/dist/components/KeySequence'/*"./KeySequence"*/);
+$_mod.def("/marko$4.14.25/dist/components/GlobalComponentsContext", function(require, exports, module, __filename, __dirname) { var nextComponentIdProvider = require('/marko$4.14.25/dist/components/util-browser'/*"./util"*/)._w_;
+var KeySequence = require('/marko$4.14.25/dist/components/KeySequence'/*"./KeySequence"*/);
 
 function GlobalComponentsContext(out) {
     this._x_ = {};
@@ -1494,9 +1494,9 @@ GlobalComponentsContext.prototype = {
 
 module.exports = GlobalComponentsContext;
 });
-$_mod.def("/marko$4.14.21/dist/components/ComponentsContext", function(require, exports, module, __filename, __dirname) { "use strict";
+$_mod.def("/marko$4.14.25/dist/components/ComponentsContext", function(require, exports, module, __filename, __dirname) { "use strict";
 
-var GlobalComponentsContext = require('/marko$4.14.21/dist/components/GlobalComponentsContext'/*"./GlobalComponentsContext"*/);
+var GlobalComponentsContext = require('/marko$4.14.25/dist/components/GlobalComponentsContext'/*"./GlobalComponentsContext"*/);
 
 function ComponentsContext(out, parentComponentsContext) {
     var globalComponentsContext;
@@ -1550,7 +1550,7 @@ module.exports = exports = ComponentsContext;
 
 exports.__ = getComponentsContext;
 });
-$_mod.installed("marko$4.14.21", "events-light", "1.0.5");
+$_mod.installed("marko$4.14.25", "events-light", "1.0.5");
 $_mod.main("/events-light$1.0.5", "src/index");
 $_mod.def("/events-light$1.0.5/src/index", function(require, exports, module, __filename, __dirname) { /* jshint newcap:false */
 var slice = Array.prototype.slice;
@@ -1719,7 +1719,7 @@ EventEmitter.prototype = {
 
 module.exports = EventEmitter;
 });
-$_mod.def("/marko$4.14.21/dist/runtime/RenderResult", function(require, exports, module, __filename, __dirname) { var domInsert = require('/marko$4.14.21/dist/runtime/dom-insert'/*"./dom-insert"*/);
+$_mod.def("/marko$4.14.25/dist/runtime/RenderResult", function(require, exports, module, __filename, __dirname) { var domInsert = require('/marko$4.14.25/dist/runtime/dom-insert'/*"./dom-insert"*/);
 
 function getComponentDefs(result) {
     var componentDefs = result._r_;
@@ -1797,7 +1797,7 @@ domInsert(proto, function getEl(renderResult, referenceEl) {
     return renderResult.afterInsert(isShadow ? referenceEl : referenceEl.ownerDocument);
 });
 });
-$_mod.installed("marko$4.14.21", "listener-tracker", "2.0.0");
+$_mod.installed("marko$4.14.25", "listener-tracker", "2.0.0");
 $_mod.main("/listener-tracker$2.0.0", "lib/listener-tracker");
 $_mod.def("/listener-tracker$2.0.0/lib/listener-tracker", function(require, exports, module, __filename, __dirname) { var INDEX_EVENT = 0;
 var INDEX_USER_LISTENER = 1;
@@ -2091,8 +2091,8 @@ module.exports = inherit;
 inherit._inherit = inherit;
 
 });
-$_mod.remap("/marko$4.14.21/dist/runtime/nextTick", "/marko$4.14.21/dist/runtime/nextTick-browser");
-$_mod.def("/marko$4.14.21/dist/runtime/nextTick-browser", function(require, exports, module, __filename, __dirname) { /* globals window */
+$_mod.remap("/marko$4.14.25/dist/runtime/nextTick", "/marko$4.14.25/dist/runtime/nextTick-browser");
+$_mod.def("/marko$4.14.25/dist/runtime/nextTick-browser", function(require, exports, module, __filename, __dirname) { /* globals window */
 
 var win = window;
 var setImmediate = win.setImmediate;
@@ -2123,13 +2123,13 @@ if (!setImmediate) {
 
 module.exports = setImmediate;
 });
-$_mod.def("/marko$4.14.21/dist/components/update-manager", function(require, exports, module, __filename, __dirname) { "use strict";
+$_mod.def("/marko$4.14.25/dist/components/update-manager", function(require, exports, module, __filename, __dirname) { "use strict";
 
 var updatesScheduled = false;
 var batchStack = []; // A stack of batched updates
 var unbatchedQueue = []; // Used for scheduled batched updates
 
-var nextTick = require('/marko$4.14.21/dist/runtime/nextTick-browser'/*"../runtime/nextTick"*/);
+var nextTick = require('/marko$4.14.25/dist/runtime/nextTick-browser'/*"../runtime/nextTick"*/);
 
 /**
  * This function is called when we schedule the update of "unbatched"
@@ -2231,8 +2231,8 @@ function queueComponentUpdate(component) {
 exports.H_ = queueComponentUpdate;
 exports.N_ = batchUpdate;
 });
-$_mod.main("/marko$4.14.21/dist/morphdom", "");
-$_mod.def("/marko$4.14.21/dist/morphdom/specialElHandlers", function(require, exports, module, __filename, __dirname) { function syncBooleanAttrProp(fromEl, toEl, name) {
+$_mod.main("/marko$4.14.25/dist/morphdom", "");
+$_mod.def("/marko$4.14.25/dist/morphdom/specialElHandlers", function(require, exports, module, __filename, __dirname) { function syncBooleanAttrProp(fromEl, toEl, name) {
     if (fromEl[name] !== toEl[name]) {
         fromEl[name] = toEl[name];
         if (fromEl[name]) {
@@ -2315,7 +2315,7 @@ SpecialElHandlers.prototype = {
 
 module.exports = new SpecialElHandlers();
 });
-$_mod.def("/marko$4.14.21/dist/runtime/vdom/VNode", function(require, exports, module, __filename, __dirname) { /* jshint newcap:false */
+$_mod.def("/marko$4.14.25/dist/runtime/vdom/VNode", function(require, exports, module, __filename, __dirname) { /* jshint newcap:false */
 function VNode() {}
 
 VNode.prototype = {
@@ -2417,7 +2417,7 @@ VNode.prototype = {
 
 module.exports = VNode;
 });
-$_mod.def("/marko$4.14.21/dist/runtime/vdom/VComment", function(require, exports, module, __filename, __dirname) { var VNode = require('/marko$4.14.21/dist/runtime/vdom/VNode'/*"./VNode"*/);
+$_mod.def("/marko$4.14.25/dist/runtime/vdom/VComment", function(require, exports, module, __filename, __dirname) { var VNode = require('/marko$4.14.25/dist/runtime/vdom/VNode'/*"./VNode"*/);
 var inherit = require('/raptor-util$3.2.0/inherit'/*"raptor-util/inherit"*/);
 
 function VComment(value) {
@@ -2442,7 +2442,7 @@ inherit(VComment, VNode);
 
 module.exports = VComment;
 });
-$_mod.def("/marko$4.14.21/dist/runtime/vdom/VDocumentFragment", function(require, exports, module, __filename, __dirname) { var VNode = require('/marko$4.14.21/dist/runtime/vdom/VNode'/*"./VNode"*/);
+$_mod.def("/marko$4.14.25/dist/runtime/vdom/VDocumentFragment", function(require, exports, module, __filename, __dirname) { var VNode = require('/marko$4.14.25/dist/runtime/vdom/VNode'/*"./VNode"*/);
 var inherit = require('/raptor-util$3.2.0/inherit'/*"raptor-util/inherit"*/);
 var extend = require('/raptor-util$3.2.0/extend'/*"raptor-util/extend"*/);
 
@@ -2477,10 +2477,10 @@ VDocumentFragmentClone.prototype = VDocumentFragment.prototype;
 
 module.exports = VDocumentFragment;
 });
-$_mod.def("/marko$4.14.21/dist/runtime/vdom/VElement", function(require, exports, module, __filename, __dirname) { /* jshint newcap:false */
-var domData = require('/marko$4.14.21/dist/components/dom-data'/*"../../components/dom-data"*/);
+$_mod.def("/marko$4.14.25/dist/runtime/vdom/VElement", function(require, exports, module, __filename, __dirname) { /* jshint newcap:false */
+var domData = require('/marko$4.14.25/dist/components/dom-data'/*"../../components/dom-data"*/);
 var vElementByDOMNode = domData._K_;
-var VNode = require('/marko$4.14.21/dist/runtime/vdom/VNode'/*"./VNode"*/);
+var VNode = require('/marko$4.14.25/dist/runtime/vdom/VNode'/*"./VNode"*/);
 var inherit = require('/raptor-util$3.2.0/inherit'/*"raptor-util/inherit"*/);
 var NS_XLINK = "http://www.w3.org/1999/xlink";
 var ATTR_XLINK_HREF = "xlink:href";
@@ -2887,7 +2887,7 @@ VElement.aA_ = function (fromEl, vFromEl, toEl) {
 
 module.exports = VElement;
 });
-$_mod.def("/marko$4.14.21/dist/runtime/vdom/VText", function(require, exports, module, __filename, __dirname) { var VNode = require('/marko$4.14.21/dist/runtime/vdom/VNode'/*"./VNode"*/);
+$_mod.def("/marko$4.14.25/dist/runtime/vdom/VText", function(require, exports, module, __filename, __dirname) { var VNode = require('/marko$4.14.25/dist/runtime/vdom/VNode'/*"./VNode"*/);
 var inherit = require('/raptor-util$3.2.0/inherit'/*"raptor-util/inherit"*/);
 
 function VText(value) {
@@ -2913,7 +2913,7 @@ inherit(VText, VNode);
 
 module.exports = VText;
 });
-$_mod.def("/marko$4.14.21/dist/runtime/vdom/VComponent", function(require, exports, module, __filename, __dirname) { var VNode = require('/marko$4.14.21/dist/runtime/vdom/VNode'/*"./VNode"*/);
+$_mod.def("/marko$4.14.25/dist/runtime/vdom/VComponent", function(require, exports, module, __filename, __dirname) { var VNode = require('/marko$4.14.25/dist/runtime/vdom/VNode'/*"./VNode"*/);
 var inherit = require('/raptor-util$3.2.0/inherit'/*"raptor-util/inherit"*/);
 
 function VComponent(component, key, ownerComponent, preserve) {
@@ -2932,12 +2932,12 @@ inherit(VComponent, VNode);
 
 module.exports = VComponent;
 });
-$_mod.def("/marko$4.14.21/dist/runtime/vdom/VFragment", function(require, exports, module, __filename, __dirname) { var domData = require('/marko$4.14.21/dist/components/dom-data'/*"../../components/dom-data"*/);
+$_mod.def("/marko$4.14.25/dist/runtime/vdom/VFragment", function(require, exports, module, __filename, __dirname) { var domData = require('/marko$4.14.25/dist/components/dom-data'/*"../../components/dom-data"*/);
 var keysByDOMNode = domData._M_;
 var vElementByDOMNode = domData._K_;
-var VNode = require('/marko$4.14.21/dist/runtime/vdom/VNode'/*"./VNode"*/);
+var VNode = require('/marko$4.14.25/dist/runtime/vdom/VNode'/*"./VNode"*/);
 var inherit = require('/raptor-util$3.2.0/inherit'/*"raptor-util/inherit"*/);
-var createFragmentNode = require('/marko$4.14.21/dist/morphdom/fragment'/*"../../morphdom/fragment"*/)._U_;
+var createFragmentNode = require('/marko$4.14.25/dist/morphdom/fragment'/*"../../morphdom/fragment"*/)._U_;
 
 function VFragment(key, ownerComponent, preserve) {
     this.bv_(null /* childCount */);
@@ -2960,13 +2960,13 @@ inherit(VFragment, VNode);
 
 module.exports = VFragment;
 });
-$_mod.def("/marko$4.14.21/dist/runtime/vdom/vdom", function(require, exports, module, __filename, __dirname) { var VNode = require('/marko$4.14.21/dist/runtime/vdom/VNode'/*"./VNode"*/);
-var VComment = require('/marko$4.14.21/dist/runtime/vdom/VComment'/*"./VComment"*/);
-var VDocumentFragment = require('/marko$4.14.21/dist/runtime/vdom/VDocumentFragment'/*"./VDocumentFragment"*/);
-var VElement = require('/marko$4.14.21/dist/runtime/vdom/VElement'/*"./VElement"*/);
-var VText = require('/marko$4.14.21/dist/runtime/vdom/VText'/*"./VText"*/);
-var VComponent = require('/marko$4.14.21/dist/runtime/vdom/VComponent'/*"./VComponent"*/);
-var VFragment = require('/marko$4.14.21/dist/runtime/vdom/VFragment'/*"./VFragment"*/);
+$_mod.def("/marko$4.14.25/dist/runtime/vdom/vdom", function(require, exports, module, __filename, __dirname) { var VNode = require('/marko$4.14.25/dist/runtime/vdom/VNode'/*"./VNode"*/);
+var VComment = require('/marko$4.14.25/dist/runtime/vdom/VComment'/*"./VComment"*/);
+var VDocumentFragment = require('/marko$4.14.25/dist/runtime/vdom/VDocumentFragment'/*"./VDocumentFragment"*/);
+var VElement = require('/marko$4.14.25/dist/runtime/vdom/VElement'/*"./VElement"*/);
+var VText = require('/marko$4.14.25/dist/runtime/vdom/VText'/*"./VText"*/);
+var VComponent = require('/marko$4.14.25/dist/runtime/vdom/VComponent'/*"./VComponent"*/);
+var VFragment = require('/marko$4.14.25/dist/runtime/vdom/VFragment'/*"./VFragment"*/);
 
 var defaultDocument = typeof document != "undefined" && document;
 var specialHtmlRegexp = /[&<]/;
@@ -3059,21 +3059,21 @@ exports.az_ = virtualize;
 exports.ba_ = virtualizeHTML;
 exports.bb_ = defaultDocument;
 });
-$_mod.def("/marko$4.14.21/dist/morphdom/index", function(require, exports, module, __filename, __dirname) { "use strict";
+$_mod.def("/marko$4.14.25/dist/morphdom/index", function(require, exports, module, __filename, __dirname) { "use strict";
 
-var specialElHandlers = require('/marko$4.14.21/dist/morphdom/specialElHandlers'/*"./specialElHandlers"*/);
-var componentsUtil = require('/marko$4.14.21/dist/components/util-browser'/*"../components/util"*/);
+var specialElHandlers = require('/marko$4.14.25/dist/morphdom/specialElHandlers'/*"./specialElHandlers"*/);
+var componentsUtil = require('/marko$4.14.25/dist/components/util-browser'/*"../components/util"*/);
 var existingComponentLookup = componentsUtil.a_;
 var destroyNodeRecursive = componentsUtil.c_;
 var addComponentRootToKeyedElements = componentsUtil._V_;
 var normalizeComponentKey = componentsUtil.ar_;
-var VElement = require('/marko$4.14.21/dist/runtime/vdom/vdom'/*"../runtime/vdom/vdom"*/).ay_;
+var VElement = require('/marko$4.14.25/dist/runtime/vdom/vdom'/*"../runtime/vdom/vdom"*/).ay_;
 var virtualizeElement = VElement.az_;
 var morphAttrs = VElement.aA_;
-var eventDelegation = require('/marko$4.14.21/dist/components/event-delegation'/*"../components/event-delegation"*/);
-var fragment = require('/marko$4.14.21/dist/morphdom/fragment'/*"./fragment"*/);
-var helpers = require('/marko$4.14.21/dist/morphdom/helpers'/*"./helpers"*/);
-var domData = require('/marko$4.14.21/dist/components/dom-data'/*"../components/dom-data"*/);
+var eventDelegation = require('/marko$4.14.25/dist/components/event-delegation'/*"../components/event-delegation"*/);
+var fragment = require('/marko$4.14.25/dist/morphdom/fragment'/*"./fragment"*/);
+var helpers = require('/marko$4.14.25/dist/morphdom/helpers'/*"./helpers"*/);
+var domData = require('/marko$4.14.25/dist/components/dom-data'/*"../components/dom-data"*/);
 var keysByDOMNode = domData._M_;
 var componentByDOMNode = domData.d_;
 var vElementByDOMNode = domData._K_;
@@ -3324,62 +3324,69 @@ function morphdom(fromNode, toNode, doc, componentsContext) {
                             detachedByDOMNode.set(matchingFromEl, undefined);
                         }
 
-                        curVFromNodeChild = vElementByDOMNode.get(matchingFromEl);
+                        if ((curToNodeChild._f_ & FLAG_PRESERVE) === 0 && !curToNodeChild.aG_) {
+                            curVFromNodeChild = vElementByDOMNode.get(matchingFromEl);
 
-                        if (compareNodeNames(curVFromNodeChild, curToNodeChild)) {
-                            if (fromNextSibling === matchingFromEl) {
-                                // Single element removal:
-                                // A <-> A
-                                // B <-> C <-- We are here
-                                // C     D
-                                // D
-                                //
-                                // Single element swap:
-                                // A <-> A
-                                // B <-> C <-- We are here
-                                // C     B
+                            if (compareNodeNames(curVFromNodeChild, curToNodeChild)) {
+                                if (fromNextSibling === matchingFromEl) {
+                                    // Single element removal:
+                                    // A <-> A
+                                    // B <-> C <-- We are here
+                                    // C     D
+                                    // D
+                                    //
+                                    // Single element swap:
+                                    // A <-> A
+                                    // B <-> C <-- We are here
+                                    // C     B
 
-                                if (toNextSibling && toNextSibling.aE_ === curFromNodeKey) {
-                                    // Single element swap
+                                    if (toNextSibling && toNextSibling.aE_ === curFromNodeKey) {
+                                        // Single element swap
 
-                                    // We want to stay on the current real DOM node
-                                    fromNextSibling = curFromNodeChild;
+                                        // We want to stay on the current real DOM node
+                                        fromNextSibling = curFromNodeChild;
 
-                                    // But move the matching element into place
-                                    insertBefore(matchingFromEl, curFromNodeChild, fromNode);
+                                        // But move the matching element into place
+                                        insertBefore(matchingFromEl, curFromNodeChild, fromNode);
+                                    } else {
+                                        // Single element removal
+
+                                        // We need to remove the current real DOM node
+                                        // and the matching real DOM node will fall into
+                                        // place. We will continue diffing with next sibling
+                                        // after the real DOM node that just fell into place
+                                        fromNextSibling = nextSibling(fromNextSibling);
+
+                                        if (curFromNodeChild) {
+                                            detachNode(curFromNodeChild, fromNode, ownerComponent);
+                                        }
+                                    }
                                 } else {
-                                    // Single element removal
+                                    // A <-> A
+                                    // B <-> D <-- We are here
+                                    // C
+                                    // D
 
-                                    // We need to remove the current real DOM node
-                                    // and the matching real DOM node will fall into
-                                    // place. We will continue diffing with next sibling
-                                    // after the real DOM node that just fell into place
-                                    fromNextSibling = nextSibling(fromNextSibling);
+                                    // We need to move the matching node into place
+                                    insertAfter(matchingFromEl, curFromNodeChild, fromNode);
 
                                     if (curFromNodeChild) {
                                         detachNode(curFromNodeChild, fromNode, ownerComponent);
                                     }
                                 }
-                            } else {
-                                // A <-> A
-                                // B <-> D <-- We are here
-                                // C
-                                // D
 
-                                // We need to move the matching node into place
-                                insertAfter(matchingFromEl, curFromNodeChild, fromNode);
-
-                                if (curFromNodeChild) {
-                                    detachNode(curFromNodeChild, fromNode, ownerComponent);
+                                if ((curToNodeChild._f_ & FLAG_PRESERVE) === 0) {
+                                    morphEl(matchingFromEl, curVFromNodeChild, curToNodeChild, curToNodeKey, ownerComponent, parentComponent);
                                 }
-                            }
-
-                            if ((curToNodeChild._f_ & FLAG_PRESERVE) === 0) {
-                                morphEl(matchingFromEl, curVFromNodeChild, curToNodeChild, curToNodeKey, ownerComponent, parentComponent);
+                            } else {
+                                insertVirtualNodeBefore(curToNodeChild, curToNodeKey, curFromNodeChild, fromNode, ownerComponent, parentComponent);
+                                detachNode(matchingFromEl, fromNode, ownerComponent);
                             }
                         } else {
-                            insertVirtualNodeBefore(curToNodeChild, curToNodeKey, curFromNodeChild, fromNode, ownerComponent, parentComponent);
-                            detachNode(matchingFromEl, fromNode, ownerComponent);
+                            // preserve the node
+                            // but still we need to diff the current from node
+                            insertBefore(matchingFromEl, curFromNodeChild, fromNode);
+                            fromNextSibling = curFromNodeChild;
                         }
                     }
                 }
@@ -3569,26 +3576,26 @@ function morphdom(fromNode, toNode, doc, componentsContext) {
 
 module.exports = morphdom;
 });
-$_mod.def("/marko$4.14.21/dist/components/Component", function(require, exports, module, __filename, __dirname) { "use strict";
+$_mod.def("/marko$4.14.25/dist/components/Component", function(require, exports, module, __filename, __dirname) { "use strict";
 /* jshint newcap:false */
 
 var complain;
 
-var domInsert = require('/marko$4.14.21/dist/runtime/dom-insert'/*"../runtime/dom-insert"*/);
-var defaultCreateOut = require('/marko$4.14.21/dist/runtime/createOut'/*"../runtime/createOut"*/);
-var getComponentsContext = require('/marko$4.14.21/dist/components/ComponentsContext'/*"./ComponentsContext"*/).__;
-var componentsUtil = require('/marko$4.14.21/dist/components/util-browser'/*"./util"*/);
+var domInsert = require('/marko$4.14.25/dist/runtime/dom-insert'/*"../runtime/dom-insert"*/);
+var defaultCreateOut = require('/marko$4.14.25/dist/runtime/createOut'/*"../runtime/createOut"*/);
+var getComponentsContext = require('/marko$4.14.25/dist/components/ComponentsContext'/*"./ComponentsContext"*/).__;
+var componentsUtil = require('/marko$4.14.25/dist/components/util-browser'/*"./util"*/);
 var componentLookup = componentsUtil.a_;
 var emitLifecycleEvent = componentsUtil.b_;
 var destroyNodeRecursive = componentsUtil.c_;
 var EventEmitter = require('/events-light$1.0.5/src/index'/*"events-light"*/);
-var RenderResult = require('/marko$4.14.21/dist/runtime/RenderResult'/*"../runtime/RenderResult"*/);
+var RenderResult = require('/marko$4.14.25/dist/runtime/RenderResult'/*"../runtime/RenderResult"*/);
 var SubscriptionTracker = require('/listener-tracker$2.0.0/lib/listener-tracker'/*"listener-tracker"*/);
 var inherit = require('/raptor-util$3.2.0/inherit'/*"raptor-util/inherit"*/);
-var updateManager = require('/marko$4.14.21/dist/components/update-manager'/*"./update-manager"*/);
-var morphdom = require('/marko$4.14.21/dist/morphdom/index'/*"../morphdom"*/);
-var eventDelegation = require('/marko$4.14.21/dist/components/event-delegation'/*"./event-delegation"*/);
-var domData = require('/marko$4.14.21/dist/components/dom-data'/*"./dom-data"*/);
+var updateManager = require('/marko$4.14.25/dist/components/update-manager'/*"./update-manager"*/);
+var morphdom = require('/marko$4.14.25/dist/morphdom/index'/*"../morphdom"*/);
+var eventDelegation = require('/marko$4.14.25/dist/components/event-delegation'/*"./event-delegation"*/);
+var domData = require('/marko$4.14.25/dist/components/dom-data'/*"./dom-data"*/);
 var componentsByDOMNode = domData.d_;
 var CONTEXT_KEY = "__subtree_context__";
 
@@ -4137,11 +4144,11 @@ inherit(Component, EventEmitter);
 
 module.exports = Component;
 });
-$_mod.def("/marko$4.14.21/dist/components/defineComponent", function(require, exports, module, __filename, __dirname) { "use strict";
+$_mod.def("/marko$4.14.25/dist/components/defineComponent", function(require, exports, module, __filename, __dirname) { "use strict";
 /* jshint newcap:false */
 
-var BaseState = require('/marko$4.14.21/dist/components/State'/*"./State"*/);
-var BaseComponent = require('/marko$4.14.21/dist/components/Component'/*"./Component"*/);
+var BaseState = require('/marko$4.14.25/dist/components/State'/*"./State"*/);
+var BaseComponent = require('/marko$4.14.25/dist/components/Component'/*"./Component"*/);
 var inherit = require('/raptor-util$3.2.0/inherit'/*"raptor-util/inherit"*/);
 
 module.exports = function defineComponent(def, renderer) {
@@ -4199,10 +4206,10 @@ module.exports = function defineComponent(def, renderer) {
     return Component;
 };
 });
-$_mod.main("/marko$4.14.21/dist/loader", "");
-$_mod.remap("/marko$4.14.21/dist/loader/index", "/marko$4.14.21/dist/loader/index-browser");
-$_mod.remap("/marko$4.14.21/dist/loader/index-browser", "/marko$4.14.21/dist/loader/index-browser-dynamic");
-$_mod.def("/marko$4.14.21/dist/loader/index-browser-dynamic", function(require, exports, module, __filename, __dirname) { "use strict";
+$_mod.main("/marko$4.14.25/dist/loader", "");
+$_mod.remap("/marko$4.14.25/dist/loader/index", "/marko$4.14.25/dist/loader/index-browser");
+$_mod.remap("/marko$4.14.25/dist/loader/index-browser", "/marko$4.14.25/dist/loader/index-browser-dynamic");
+$_mod.def("/marko$4.14.25/dist/loader/index-browser-dynamic", function(require, exports, module, __filename, __dirname) { "use strict";
 
 module.exports = function load(templatePath) {
     // We make the assumption that the template path is a
@@ -4211,9 +4218,9 @@ module.exports = function load(templatePath) {
     return require(templatePath);
 };
 });
-$_mod.def("/marko$4.14.21/dist/components/registry-browser", function(require, exports, module, __filename, __dirname) { var complain;
-var defineComponent = require('/marko$4.14.21/dist/components/defineComponent'/*"./defineComponent"*/);
-var loader = require('/marko$4.14.21/dist/loader/index-browser-dynamic'/*"../loader"*/);
+$_mod.def("/marko$4.14.25/dist/components/registry-browser", function(require, exports, module, __filename, __dirname) { var complain;
+var defineComponent = require('/marko$4.14.25/dist/components/defineComponent'/*"./defineComponent"*/);
+var loader = require('/marko$4.14.25/dist/loader/index-browser-dynamic'/*"../loader"*/);
 
 var registered = {};
 var loaded = {};
@@ -4284,19 +4291,19 @@ function createComponent(typeName, id, isLegacy) {
 exports._Q_ = register;
 exports._n_ = createComponent;
 });
-$_mod.def("/marko$4.14.21/dist/components/init-components-browser", function(require, exports, module, __filename, __dirname) { "use strict";
+$_mod.def("/marko$4.14.25/dist/components/init-components-browser", function(require, exports, module, __filename, __dirname) { "use strict";
 
 var warp10Finalize = require('/warp10$2.0.1/finalize'/*"warp10/finalize"*/);
-var eventDelegation = require('/marko$4.14.21/dist/components/event-delegation'/*"./event-delegation"*/);
+var eventDelegation = require('/marko$4.14.25/dist/components/event-delegation'/*"./event-delegation"*/);
 var win = window;
 var defaultDocument = document;
-var createFragmentNode = require('/marko$4.14.21/dist/morphdom/fragment'/*"../morphdom/fragment"*/)._U_;
-var componentsUtil = require('/marko$4.14.21/dist/components/util-browser'/*"./util"*/);
+var createFragmentNode = require('/marko$4.14.25/dist/morphdom/fragment'/*"../morphdom/fragment"*/)._U_;
+var componentsUtil = require('/marko$4.14.25/dist/components/util-browser'/*"./util"*/);
 var componentLookup = componentsUtil.a_;
 var addComponentRootToKeyedElements = componentsUtil._V_;
-var ComponentDef = require('/marko$4.14.21/dist/components/ComponentDef'/*"./ComponentDef"*/);
-var registry = require('/marko$4.14.21/dist/components/registry-browser'/*"./registry"*/);
-var domData = require('/marko$4.14.21/dist/components/dom-data'/*"./dom-data"*/);
+var ComponentDef = require('/marko$4.14.25/dist/components/ComponentDef'/*"./ComponentDef"*/);
+var registry = require('/marko$4.14.25/dist/components/registry-browser'/*"./registry"*/);
+var domData = require('/marko$4.14.25/dist/components/dom-data'/*"./dom-data"*/);
 var componentsByDOMNode = domData.d_;
 var serverRenderedGlobals = {};
 var serverComponentRootNodes = {};
@@ -4576,11 +4583,11 @@ function hydrateComponent(componentDef, doc) {
 exports._u_ = initClientRendered;
 exports._S_ = initServerRendered;
 });
-$_mod.def("/marko$4.14.21/dist/components/index-browser", function(require, exports, module, __filename, __dirname) { var componentsUtil = require('/marko$4.14.21/dist/components/util-browser'/*"./util"*/);
-var initComponents = require('/marko$4.14.21/dist/components/init-components-browser'/*"./init-components"*/);
-var registry = require('/marko$4.14.21/dist/components/registry-browser'/*"./registry"*/);
+$_mod.def("/marko$4.14.25/dist/components/index-browser", function(require, exports, module, __filename, __dirname) { var componentsUtil = require('/marko$4.14.25/dist/components/util-browser'/*"./util"*/);
+var initComponents = require('/marko$4.14.25/dist/components/init-components-browser'/*"./init-components"*/);
+var registry = require('/marko$4.14.25/dist/components/registry-browser'/*"./registry"*/);
 
-require('/marko$4.14.21/dist/components/ComponentsContext'/*"./ComponentsContext"*/)._u_ = initComponents._u_;
+require('/marko$4.14.25/dist/components/ComponentsContext'/*"./ComponentsContext"*/)._u_ = initComponents._u_;
 
 exports.getComponentForEl = componentsUtil._R_;
 exports.init = window.$initComponents = initComponents._S_;
@@ -4591,7 +4598,7 @@ exports.register = function (id, component) {
     });
 };
 });
-$_mod.def("/marko$4.14.21/components-browser.marko", function(require, exports, module, __filename, __dirname) { module.exports = require('/marko$4.14.21/dist/components/index-browser'/*"./dist/components"*/);
+$_mod.def("/marko$4.14.25/components-browser.marko", function(require, exports, module, __filename, __dirname) { module.exports = require('/marko$4.14.25/dist/components/index-browser'/*"./dist/components"*/);
 
 });
 $_mod.def("/app$1.0.0/src/components/tag-list/component-browser", function(require, exports, module, __filename, __dirname) { var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
@@ -4611,7 +4618,7 @@ module.exports = function () {
     return _class;
 }();
 });
-$_mod.def("/app$1.0.0/src/components/tag-list/index.marko.register", function(require, exports, module, __filename, __dirname) { require('/marko$4.14.21/components-browser.marko'/*'marko/components'*/).register("/app$1.0.0/src/components/tag-list/component-browser", require('/app$1.0.0/src/components/tag-list/component-browser'/*"./component-browser"*/));
+$_mod.def("/app$1.0.0/src/components/tag-list/index.marko.register", function(require, exports, module, __filename, __dirname) { require('/marko$4.14.25/components-browser.marko'/*'marko/components'*/).register("/app$1.0.0/src/components/tag-list/component-browser", require('/app$1.0.0/src/components/tag-list/component-browser'/*"./component-browser"*/));
 });
 $_mod.run("/app$1.0.0/src/components/tag-list/index.marko.register");
 /*! jQuery v3.3.1 | (c) JS Foundation and other contributors | jquery.org/license */
@@ -5331,6 +5338,6 @@ var breakpoints=function(){"use strict";function e(e){t.init(e)}var t={list:null
 
 })(jQuery);
 
-$_mod.def("/app$1.0.0/src/routes/talks/drafts/general/protecting_your_privacy.marko.init", function(require, exports, module, __filename, __dirname) { window.$initComponents && window.$initComponents();
+$_mod.def("/app$1.0.0/src/index.marko.init", function(require, exports, module, __filename, __dirname) { window.$initComponents && window.$initComponents();
 });
-$_mod.run("/app$1.0.0/src/routes/talks/drafts/general/protecting_your_privacy.marko.init");
+$_mod.run("/app$1.0.0/src/index.marko.init");
